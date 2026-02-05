@@ -7,7 +7,7 @@ class OrderStatus
 	{
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Enter the Order Code : ");
+		System.out.print("Enter the Order Code (P,S,D,C) : ");
 		char OrderCode = scan.next().charAt(0);
 		
 		switch (OrderCode)

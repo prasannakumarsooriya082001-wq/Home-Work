@@ -7,12 +7,12 @@ class TrafficSignal
 	{
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Enter the Signal Color : ");
+		System.out.print("Enter the Signal Color (R,Y,G) : ");
 		char signalColor = scan.next().charAt(0);
 		
 		switch (signalColor)
 		{
-			case 'R' | 'r' :
+			case 'R' :
 			{
 				String color = "STOP";
 				System.out.println(color);

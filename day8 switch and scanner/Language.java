@@ -7,7 +7,7 @@ class Language
 	{
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Enter the Language Number : ");
+		System.out.print("Enter the Language Number (1,2,3,4) : ");
 		int language = scan.nextInt();
 		
 		
