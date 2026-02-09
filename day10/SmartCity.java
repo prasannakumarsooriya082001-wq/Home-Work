@@ -51,18 +51,26 @@ class SmartCity
 				System.out.print("Select the House Type : ");
                 int houseType = sc.nextInt();
 
-                if (houseType == 1) 
+                if (houseType >= 1 && houseType <= 2) 
 				{
-                    System.out.println("Water Bill : Rs300");
-                } 
-                else if (houseType == 2) 
-				{
+					if (houseType == 1)
+					{
+						System.out.println("Water Bill : Rs300");
+					}
+					else if (houseType == 2) 
+					{
                         System.out.println("Water Bill : Rs500");
-                } 
-                else 
-				{
-                        System.out.println("Invalid House Type");
+					} 
+					else 
+					{
+						System.out.println("Invalid House Type");
+					}
                 }
+				else
+				{
+					System.out.println("Invalid House Type");
+				}
+                
                 break;
 
             case 3:
