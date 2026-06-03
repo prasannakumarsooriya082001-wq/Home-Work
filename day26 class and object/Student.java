@@ -29,8 +29,10 @@ class Student
 				{	
 					System.out.print("Enter The Student Name : ");
 					String name = sc1.nextLine();
+					System.out.print("Enter The Roll No : ");
+					int rollNo = sc.nextInt();
 					
-					sd.addStudent(name);
+					sd.addStudent(name,rollNo);
 					System.out.println("Student details saved.");
 					break;
 				}

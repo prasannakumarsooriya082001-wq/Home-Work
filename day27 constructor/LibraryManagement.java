@@ -23,22 +23,5 @@ class LibraryManagement
 		System.out.println("--------------------");
 	}
 	
-	void borrowBook()
-	{
-		if(isAvailable)
-        {
-            isAvailable = false;
-            System.out.println("Book Borrowed Successfully");
-        }
-        else
-        {
-            System.out.println("Book Already Borrowed");
-        }
-	}
 	
-	void returnBook()
-	{
-		isAvailable = true;
-        System.out.println("Book Returned Successfully");
-	}
 }

@@ -3,14 +3,14 @@ import java.util.Scanner;
 class BinarySearch
 {
 	int binary(int ar[], int target)
-	{
+	{									//1,3,4,6,7,8,9
 		int start = 0;
-		int end = ar.length-1;
+		int end = ar.length-1;			// target 7
 		int mid;
 		
-		while(start <= end)
+		while(start <= end) // start =4 end =4
 		{
-			mid = (start+end)/2;
+			mid = (start+end)/2; // 4
 			
 			if(ar[mid] == target)
 			{
@@ -36,7 +36,7 @@ class BinarySearch
 		BinarySearch bs = new BinarySearch();
 		
 		System.out.print("Enter Array length : ");
-		int len =sc.nextInt();
+		int len =sc.nextInt();// 
 		
 		int ar[] = new int[len];
 		
@@ -44,7 +44,7 @@ class BinarySearch
 		
 		for(int i =0 ;i<ar.length;i++)
 		{
-			System.out.print("Enter the "+ i + " index value : ");
+			System.out.print("Enter the "+ i + " index value : ");// 1,3,4,6,7,8,9
 			ar[i] = sc.nextInt();
 		}
 		

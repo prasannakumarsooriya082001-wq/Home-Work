@@ -7,14 +7,14 @@ class StudentDetails
 	String std[] = new String[10];
 	
 	int rollNumber[] = new int[10]; 
-	int rollNo = 100;
+
 	
 	int count = 0;
 	
-	void addStudent(String name)
+	void addStudent(String name,int rollNo)
 	{
 		std[count] = name;
-		rollNumber[count] = ++rollNo;
+		rollNumber[count] = rollNo;
 		count++;
 	}
 	

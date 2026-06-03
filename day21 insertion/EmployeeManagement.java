@@ -22,7 +22,7 @@ class EmployeeManagement
 		}
 	}
 	
-	void removeEmployeeId(int[] empIds )
+	void removeEmployeeId(int[] empIds ) // 101 102 103 104
 	{
 		System.out.print("Enter employee ID to be remove : ");
         int removeId = sc1.nextInt();
