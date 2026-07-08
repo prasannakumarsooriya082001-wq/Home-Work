@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic User Cards</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px 20px;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #cardContainer {
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 200px;
+            margin: 10px auto;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Dynamic User Cards</h2>
+
+    <input type="text" id="text" placeholder="Enter a name">
+    <button id="addBtn">Add Card</button>
+
+    <div id="cardContainer"></div>
+
+    <script>
+        let textInput = document.getElementById('text');
+        let addBtn = document.getElementById('addBtn');
+        let cardContainer = document.getElementById('cardContainer');
+
+        addBtn.addEventListener('click', function () {
+
+            if (textInput.value !== '') {
+                let card = document.createElement('div');
+                card.className = 'card';
+                card.textContent = textInput.value;
+                cardContainer.appendChild(card);
+                textInput.value = '';
+            }
+            else {
+                alert('Please enter a name');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input{
+            padding: 10px;
+            width: 250px;
+        }
+        button{
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student List</h2>
+
+    <input type="text" id="stuInput" placeholder="Enter Student Name">
+    <button id="addStu">Add Student</button>
+
+    <ol id="studentList"></ol>
+
+    <script>
+        let stuInput = document.getElementById('stuInput');
+        let addStu = document.getElementById('addStu');
+        let studentList = document.getElementById('studentList');
+
+        addStu.addEventListener('click', function () 
+        {
+            if (stuInput.value !== '') {
+                let li = document.createElement('li');
+                li.textContent = stuInput.value;
+                studentList.appendChild(li);
+                stuInput.value = '';
+            } else {
+                alert('Please enter a student name');
+            }
+        });
+    </script>
+</body>
+</html>

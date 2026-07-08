@@ -1,0 +1,50 @@
+/* /* .stu{
+    width: 300px;
+    padding: 20px;
+    border: 3px solid black;
+    margin: 40px auto;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: 0px 5px 10px black;
+}
+
+h1{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 2px 2px 5px gray;
+}
+
+input{
+    
+    outline: 3px solid orange;
+    caret-color: red;
+}
+
+a{
+    text-decoration: none;
+} 
+
+.col{
+    column-count: 3;
+    column-rule: 2px solid black; ;
+} 
+
+input{
+    accent-color: red;
+}
+
+p{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: dashed underline;
+    line-height: 20px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    white-space: pre;
+    font-weight: bolder;
+}*/
+

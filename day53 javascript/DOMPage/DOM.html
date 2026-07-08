@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name : </label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="submitBtn">Submit</button>
+    <br><br>
+    <label id="result"></label>
+
+    <script>
+        let nameInput = document.getElementById("name");
+        let submitBtn = document.getElementById("submitBtn");
+        let resultLabel = document.getElementById("result");
+
+        submitBtn.addEventListener("click", function() 
+        {
+            let name = nameInput.value;
+            if (name !== '') {
+                resultLabel.textContent = "Hello, " + name + "!";
+            } 
+            else {
+                resultLabel.textContent = "Please enter your name.";
+            }
+        });
+    </script>
+</body>
+</html>

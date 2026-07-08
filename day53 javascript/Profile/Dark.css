@@ -1,0 +1,45 @@
+body {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1, 1, 27);
+}
+
+section {
+    background-color: rgb(15, 15, 45);
+    border: 1px solid rgb(40, 40, 80);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(38, 38, 41);
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+}
+
+
+img {
+    border-radius: 50%;
+    border: 2px solid #6c63ff;
+}
+
+h1 {
+    color: white;
+}
+
+p{
+    color: #cfcfcf;
+}
+
+button {
+    background-color: #6c63ff;
+    color: white;
+    border: 1px solid #6c63ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #5848ff;
+}
