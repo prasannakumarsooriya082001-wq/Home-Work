@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+     <input type="text" id="name" placeholder="Enter Name">
+    <button onclick="saveName()">Save</button>
+
+    <h2 id="display"></h2>
+
+    <script>
+        const input = document.getElementById("name");
+        const display = document.getElementById("display");
+
+        window.onload = function () {
+            let data = localStorage.getItem("username");
+            if (data) {
+                display.innerHTML = "Welcome " + data;
+                input.value = data;
+            }
+            else{
+                alert("No data found in local storage");
+            }
+        }
+
+        function saveName() {
+            localStorage.setItem("username", input.value);
+            display.innerHTML = "Welcome " + input.value;
+        }
+    </script>
+</body>
+</html>
